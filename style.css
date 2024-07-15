@@ -1,0 +1,2121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================NAVBAR============================ */
+.visible {
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px;
+    height: 130px;
+    width: 90px;
+    position: fixed;
+    top: 70px;
+    z-index: 10;
+
+
+
+}
+
+.visible.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-down {
+    display: flex;
+    margin-left: 500px;
+
+}
+
+.visible2 {
+    display: none;
+    background-color: white;
+    box-shadow: 1px 1px 6px 1px;
+    height: 130px;
+    width: 90px;
+    margin-left: 580px;
+    position: fixed;
+    top: 70px;
+    z-index: 10;
+
+}
+
+.visible2.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    max-height: 120px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    z-index: 9;
+    padding-bottom: 10px;
+    /* background-color: transparent; */
+
+
+}
+
+.navbar img {
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.navbar .drop {
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    opacity: 70%;
+
+}
+
+.burger {
+    display: none;
+}
+
+.body {
+    width: screen;
+}
+
+@media screen and (max-width: 500px) {
+    .body {
+        width:screen;
+        overflow-x: hidden;
+        
+    }
+
+    .navbar img {
+        width: 160px;
+        height: 35px;
+        margin-left: 10px;
+        margin-top: 20px;
+
+    }
+
+    .navbar {
+        border-bottom: 2px solid black;
+        width: screen;
+        padding-bottom: 15px;
+
+
+    }
+
+    .navbar ul {
+        display: none;
+        top: -30px;
+        flex-direction: column;
+        position: relative;
+        gap: 10px;
+        height: 300px;
+        width: 250px;
+        background-color: #f4f4f9;
+        right: 180px;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin-top: 10px;
+
+    }
+
+    .cross{
+        display: none;
+        margin-top: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       padding-left: -20px;
+        font-weight: bold;
+        font-size: x-large;
+        position: relative;
+        left: 40px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .cross.active{
+        display: flex;
+    }
+
+    .navbar ul.active  {
+        display: flex
+    }
+
+    
+    .burger {
+        display: flex;
+        position: relative;
+        width: 10px;
+        margin-left: 200px;
+        cursor: pointer;
+
+    }
+
+    .btn {
+        display: none;
+
+    }
+
+    .body-text {
+        width: screen;
+        justify-content: center;
+    }
+
+    .big-text p {
+        font-size: large;
+        text-align: center;
+        margin-left: -350px;
+
+
+    }
+
+    .small-text p {
+        font-size: large;
+        text-align: center;
+        margin-left: -305px;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+
+    .full-section,
+    .main-sectio {
+        width: 400px;
+        max-height: 600px;
+        overflow: hidden;
+        position: relative;
+        right: 100px;
+    }
+
+    .full-section .write-section .bot {
+        padding: 0%;
+        margin-right: -200px;
+
+    }
+
+    .write-section p,
+    .textSection p {
+        font-size: small;
+        margin-right: -100px;
+    }
+
+    .pic-section,
+    .photo-section {
+        width: 20%;
+        margin-left: 40px;
+
+    }
+
+    .full-section .pic-section img,
+    .main-sectio .photo-section img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .main-sectio {
+        width: screen;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        overflow-x: scroll;
+    }
+
+    .main-sectio .photo-section img {
+        margin-left: 50px;
+        width: 250px;
+        height: 250px;
+        margin-top: -80px;
+    }
+
+    .main-sectio .textSection {
+        margin-top: -5px;
+    }
+
+    .main-sectio .textSection .top {
+        margin-left: 70px;
+        margin-top: 5px;
+    }
+
+    .main-sectio .textSection .bot {
+        font-size: small;
+        width: 300px;
+        gap: 80px;
+    }
+
+    .marketing {
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 600px;
+    }
+
+    .marketing .text-section {
+        width: 320px;
+    }
+
+    .marketing .text-section p {
+        font-size: large;
+        margin-bottom: 50px;
+    }
+
+    .rest-section .portion {
+        display: grid;
+        grid-template-columns: repeat(2, 0.1fr);
+        margin-left: 50px;
+    }
+
+    .DM,
+    .DD,
+    .DA,
+    .CS {
+        max-width: 180px;
+        max-height: 210px;
+
+    }
+
+    .DM img,
+    .DD img,
+    .DA img,
+    .CS img {
+        max-width: 50px;
+        max-height: 50px;
+
+    }
+
+    .DM .head,
+    .DD .head,
+    .DA .head,
+    .CS .head {
+        font-size: 0.8rem;
+
+    }
+
+    .CMS .top-text p {
+        font-size: large;
+        width: 300px;
+        margin-left: -240px;
+
+    }
+
+    .CMS .lower-text p {
+        font-size: large;
+        width: 350px;
+        margin-left: -265px;
+
+    }
+
+    .CMS {
+        max-width: 200px;
+        max-height: 2500px;
+    }
+
+    .CMS .top-strategy {
+        display: flex;
+
+
+
+    }
+
+    .CMS .top-strategy .S2 {
+        position: relative;
+        top: 650px;
+        width: 350px;
+        max-height: 600px;
+        margin-bottom: 700px;
+        right: 375px;
+
+    }
+
+
+    .CMS .top-strategy .S1 {
+        width: 350px;
+        max-height: 600px;
+        margin-bottom: 700px;
+        margin-left: -50px;
+
+    }
+
+    .CMS .top-strategy .S1 p,
+    .S2 p,
+    .S3 p,
+    .S4 p,
+    .S5 p {
+        font-size: small;
+    }
+
+    .CMS .top-strategy .S1 .pic2,
+    .S2 .pic2 {
+        max-width: 300px;
+        max-height: 240px;
+        object-fit: cover;
+
+    }
+
+    .CMS .bottom-Strategy .S3 {
+        position: relative;
+        bottom: 50px;
+        right: 50px;
+        width: 350px;
+
+    }
+
+    .CMS .bottom-Strategy .S4 {
+        position: relative;
+        top: 530px;
+        right: 425px;
+        width: 350px;
+    }
+
+    .CMS .bottom-Strategy .S5 {
+        position: relative;
+        top: 1110px;
+        right: 800px;
+        width: 350px;
+    }
+
+    .PS {
+        top: 1000px;
+        height: 1800px;
+        right: 80px;
+        position: relative;
+        margin-top: 1500px;
+    }
+
+    .PS .pic img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .PS .text-section {
+        position: relative;
+        width: 350px;
+        top: 380px;
+        right: 400px;
+    }
+
+    .PS .text-section .top {
+        font-size: small;
+    }
+
+    .PS .text-section .mid p {
+        font-size: 2.0rem;
+
+    }
+
+    .PS .text-section .bot p {
+        font-size: 0.9rem;
+    }
+
+    .EOP {
+        height: 1250px;
+        width: 600px;
+    }
+
+    .EOP .top-text p {
+        margin-left: -280px;
+        font-size: 1.8rem;
+    }
+
+    .EOP .lower-text p {
+        margin-left: -280px;
+        font-size: 1.0rem;
+        text-align: center;
+    }
+
+    .EOP img {
+        max-width: 400px;
+        max-height: 300px;
+        position: relative;
+        right: 110px;
+
+    }
+
+    .EOP .r1 {
+        position: relative;
+        right: 120px;
+        text-align: center;
+        width: 350px;
+    }
+
+    .EOP .r2 {
+        position: relative;
+        right: 500px;
+        top: 220px;
+        text-align: center;
+        width: 350px;
+    }
+
+    .EOP .r3 {
+        position: relative;
+        right: 870px;
+        top: 450px;
+        text-align: center;
+        width: 350px;
+    }
+
+    .DT {
+        height: 1000px;
+    }
+
+    .DT .text-section {
+        margin-top: 600px;
+        width: 500px;
+    }
+
+    .DT .img {
+        margin-left: -670px;
+
+    }
+
+    .DT img {
+        max-width: 400px;
+        max-height: 500px;
+        object-fit: cover;
+    }
+
+    .DT .text-section .top p {
+        width: 500px;
+        font-size: 1.1rem;
+        margin-left: -110px;
+    }
+
+    .DT .text-section .mid p {
+        width: 380px;
+        font-size: 2.0rem;
+        margin-left: -110px;
+    }
+
+    .DT .text-section .bot p {
+        width: 380px;
+        font-size: 1.0rem;
+        margin-left: -110px;
+    }
+
+    .TCS {
+        max-width: screen;
+
+    }
+
+    .TCS .upper-text p {
+        margin-left: -250px;
+        font-size: large;
+    }
+
+    .TCS .lower-text p {
+        margin-left: -250px;
+        width: 340px;
+        font-size: large;
+    }
+
+    .TCS .items {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        right: 120px;
+        max-width: 50px;
+
+    }
+
+    .TCS .items .item-1 {
+        position: relative;
+        height: 300px;
+        max-width: 350px;
+    }
+
+    .TCS .items #item-2 {
+        position: relative;
+        top: 1020px;
+        right: 380px;
+        height: 300px;
+        max-width: 350px;
+
+    }
+
+    .solution {
+        padding-bottom: 170px;
+        width: 390px;
+        position: relative;
+        top: 1000px;
+        right: 100px;
+    }
+
+    .solution .text-section img {
+        position: relative;
+        bottom: 50px;
+        left: 90px;
+    }
+
+    .solution .text-section .mid p {
+        width: 370px;
+        position: relative;
+        bottom: 50px;
+        font-size: 1.3rem;
+        right: 40px;
+    }
+
+    .solution .text-section .bot p {
+        width: 370px;
+        position: relative;
+        bottom: 50px;
+        font-size: 0.9rem;
+        right: 40px;
+    }
+
+    .solution .text-section span {
+        width: 370px;
+        position: relative;
+        bottom: 80px;
+        right: 40px;
+        font-size: 1.1rem;
+    }
+
+    .solution .image-section img {
+        max-width: 350px;
+        max-height: 250px;
+        position: relative;
+        top: 300px;
+        right: 450px;
+    }
+
+    .data-driv {
+        position: relative;
+        top: 1000px;
+        right: 100px;
+        padding-bottom: 1350px;
+
+    }
+
+    .data-driv .image-section img {
+        max-width: 400px;
+        max-height: 500px;
+    }
+
+    .data-driv .text-section .mid {
+        position: relative;
+        right: 460px;
+        font-size: x-small;
+        top: 500px;
+        width: 380px;
+    }
+
+    .data-driv .text-section .mid p {
+        font-size: 1.4rem;
+    }
+
+    .data-driv .text-section .bot {
+        position: relative;
+        right: 460px;
+        font-size: x-small;
+        top: 500px;
+        width: 380px;
+    }
+
+    .data-driv .text-section .bot p {
+        font-size: 0.9rem;
+    }
+
+    .CDA .text-section {
+        position: relative;
+        left: -90px;
+    }
+
+    .CDA .text-section .text {
+        max-width: 400px;
+    }
+
+    .CDA .text-section .text img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+
+    .CDA .text-section .text p {
+        font-size: large;
+    }
+
+    .SI {
+        position: relative;
+        max-width: 400px;
+        right: 240px;
+        height: 1000px;
+    }
+
+    .SI .upper-text p {
+        font-size: x-large;
+        width: 400px;
+        text-align: center;
+        margin-left: -90px;
+    }
+
+    .SI .lower-text p {
+        font-size: small;
+        margin-left: -60px;
+        width: 400px;
+        text-align: center;
+
+    }
+
+    .SI .logo {
+        transform: rotate(90deg);
+        position: relative;
+        left: 160px;
+        bottom: 150px;
+        max-width: 400px;
+
+    }
+
+    .SI .logo .l1 {
+        transform: rotate(-90deg);
+        margin-top: 55px;
+        max-width: 90px;
+        max-height: 70px;
+        font-size: small;
+        text-align: center;
+        padding-right: 20px;
+    }
+
+    .SI .logo .l1 img {
+        max-width: 30px;
+        max-height: 30px;
+
+    }
+
+    .SI .btn1 {
+        position: relative;
+        right: 250px;
+        top: 400px;
+    }
+
+    .SI .logo .l1 .name {
+        margin-top: 5px;
+        margin-left: 0;
+        text-align: center;
+        /* Center align text */
+    }
+
+    .SI .btn1 {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        /* Center align button */
+    }
+
+    .digi-agen .text-section {
+        width: 420px;
+        position: relative;
+        right: 60px;
+    }
+
+    .digi-agen .text-section .top {
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: -50px;
+    }
+
+    .digi-agen .text-section .mid {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-left: -55px;
+    }
+
+    .digi-agen .image-section {
+        position: relative;
+        right: 620px;
+        top: 200px;
+    }
+
+    .digi-agen .image-section img {
+        max-width: 90px;
+        object-fit: contain;
+        margin-left: 20px;
+    }
+    .digi-agen .image-section .secondRow {
+        position: relative;
+        bottom: 70px;
+    }
+        .digi-agen .image-section .ThirdRow {
+        position: relative;
+        bottom: 140px;
+    }
+    .ohc{
+        position: relative;
+        right: 280px;
+    }
+    .ohc .upper-text p{
+        font-size:30px;
+        width: 400px;
+        margin-left: -55px;
+    }
+    .ohc .lower-text p{
+        font-size: 20;
+        width: 290px;
+        margin-left: -75px;
+    }
+    .ohc .swiper-container{
+        margin-left: 325px;
+        width: 400px;
+        overflow-y: scroll;
+    }
+   
+
+    .ohc .swiper-container .swiper-slide .testimonial{
+        max-width: 600px;
+        position: relative;
+        right: 90;
+        /* margin-right:150px; */
+       
+    }
+    .ohc .swiper-container .swiper-slide .testimonial .star-rating img{
+        width: 300px;
+    }
+    .ohc .swiper-container .swiper-slide .testimonial h3{
+        width: 300px;
+    }
+    .ohc .swiper-container .swiper-slide .testimonial p{
+        width: 300px;
+    }
+    
+    .ohc .swiper-container .swiper-slide .testimonial .author{
+        width: 300px;
+    }
+    .ohc .swiper-container .swiper-slide .testimonial .designation{
+        width: 300px;
+    }
+    .jb{
+        position: relative;
+        right: 155px;
+        width: 200px;
+
+    }
+    .jb .text-section{
+        max-width:180px;
+    }
+    .jb .text-section .btn1{
+        margin-left: 20px;
+        width: 300px;
+        height: 40px;
+    }
+    .jb .text-section .btn2{
+        margin-left: 20px;
+        width: 300px;
+        height: 40px;
+    }
+    .jb .text-section .mid p{
+        width: 380px;
+        font-size: 30px;
+    }
+   .UF{
+    width: 500px;
+    height: 800px;
+   }    
+   .UF .solt{
+    width: 220px;
+    margin-left: -60px;
+   }
+   .UF .solutions{
+    width: 250px;
+    margin-left: -90px;
+   }
+   .UF .discover{
+    position: relative;
+    top: 450px;
+    right: 430px;
+    width: 250px;
+   }
+   .UF .about{
+    position: relative;
+    top: 450px;
+    right: 540px;
+    width: 250px;
+
+   }
+   .UF .about input{
+    font-size: 0.8rem;
+   }
+
+
+
+    
+   
+
+   
+
+}
+@media screen and (max-width: 800px){
+    
+}
+
+
+
+
+.body .box1 {
+
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    opacity: 70%;
+
+}
+
+.box1:hover {
+    background-color: black;
+    color: white;
+    width: 85px;
+}
+
+.body .box2 {
+
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+
+}
+
+.box2:hover {
+    background-color: black;
+    color: white;
+    width: 85px;
+}
+
+
+.btn {
+    color: white;
+    background-color: #308af0;
+    padding: 0px 15px;
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 17px;
+    border: 1px solid #308af0;
+    border-radius: 33%;
+    transition: 1.0s all ease;
+}
+
+.btn:hover {
+    color: black;
+    background-color: #fff;
+    border: 2px solid black;
+    transition: 1.0s all ease;
+
+}
+
+li {
+    list-style-type: none;
+
+}
+
+
+/* ====================body-text===================== */
+.body-text {
+    margin-top: 150px;
+}
+
+.body-text .big-text {
+    max-width: 800px;
+    font-size: 4.2rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 100px;
+    margin-left: 350px;
+    opacity: 90%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.body-text .small-text {
+    max-width: 850px;
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 40px;
+    margin-left: 300px;
+    opacity: 70%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.bc p {
+    opacity: 80%;
+}
+
+.bc {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.btn1 {
+    height: 60px;
+    font-size: large;
+    width: 240px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: #308af0;
+    color: #fff;
+    transition: 1.0s all ease;
+}
+
+.btn1:hover {
+    background-color: white;
+    color: black;
+    transition: 1.0s all ease;
+}
+
+.btn2 {
+    height: 60px;
+    width: 240px;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: large;
+    transition: 1.0s all ease;
+
+}
+
+.btn2:hover {
+    background-color: #308af0;
+    color: white;
+    transition: 1.0s all ease;
+}
+
+/* ======================ENDLESS POSSIBILTIES====================== */
+.full-section {
+    max-width: 1100px;
+    height: 750px;
+    background-color: #f4f4f9;
+    margin-left: 120px;
+    margin-top: 180px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.write-section {
+    max-width: 700px;
+    margin-left: 70px;
+    margin-top: 100px;
+
+
+}
+
+.write-section .top {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+}
+
+.write-section .mid {
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+
+}
+
+.write-section .bot {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+
+}
+
+.pic-section {
+    max-width: 300px;
+    padding: 100px 100px;
+    margin-right: 60px;
+}
+
+.pic-section img {
+    width: 450px;
+    height: 500px;
+}
+
+
+/* ==============================STRATEGIES THAT WORK=========================== */
+.main-sectio {
+    max-width: 1600px;
+    height: 850px;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+}
+
+.main-sectio img {
+    height: 700px;
+    width: 550px;
+    max-width: 500px;
+    margin-top: 40px;
+}
+
+.textSection {
+    max-width: 1000px;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.textSection .top {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+
+}
+
+.textSection .mid {
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+
+}
+
+.textSection .low {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+
+}
+
+.textSection .low p::before {
+    content: '•';
+    color: black;
+    opacity: 50%;
+    font-size: 30px;
+}
+
+.textSection .bot {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    margin-right: 150px;
+}
+
+.bot .right {
+    margin-left: 100px;
+}
+
+.bot .right .num,
+.bot .left .num {
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+}
+
+.bot .right .text,
+.bot .left .text {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+}
+
+
+/* ===================marketing====================== */
+.marketing {
+    max-width: 2100px;
+    height: 650px;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.marketing .text-section {
+    max-width: 1000px;
+    margin-right: 150px;
+    margin-left: 100px;
+    margin-top: 100px
+}
+
+.marketing .top,
+.DT .top {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+}
+
+.marketing .mid,
+.DT .mid {
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+
+}
+
+.marketing .bot,
+.DT .bot {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+
+}
+
+.rest-section {
+    max-width: 1500px;
+    background-color: #f4f4f9;
+    width: 2200px;
+    height: 500px;
+    padding-bottom: 100px;
+}
+
+.portion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    z-index: 2;
+    position: relative;
+    right: 30px;
+    bottom: 30px;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.portion .DM,
+.DD,
+.DA,
+.CS {
+    background-color: white;
+    display: grid;
+    justify-content: space-evenly;
+    z-index: 3;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 250px;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.portion img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.portion .text {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    letter-spacing: 1px;
+    margin-top: 30px;
+
+}
+
+/* ======================CMS=========================== */
+.CMS,
+.EOP,
+.TCS {
+    margin-top: 150px;
+}
+
+.CMS .top-text,
+.EOP .top-text,
+.TCS .upper-text,
+.SI .upper-text,
+.ohc .upper-text {
+    font-size: 3.8rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 330px;
+    margin-right: 200px;
+}
+
+.CMS .lower-text,
+.EOP .lower-text,
+.TCS .lower-text,
+.SI .lower-text,
+.ohc .lower-text {
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 55%;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-left: 330px;
+    margin-right: 200px;
+}
+
+.CMS .top-strategy {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1500px;
+}
+
+.CMS .top-strategy .S1,
+.S2 {
+    max-width: 700px;
+    height: 800px;
+    background-color: #f4f4f9;
+    margin-top: 100px;
+    border-radius: 10px;
+
+}
+
+.CMS .top-strategy .S1 .pic1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.CMS .top-strategy .S2 .pic1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 60px;
+}
+
+.CMS .top-strategy .S1 .top,
+.S2 .top {
+    font-size: 2.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+.CMS .top-strategy .S1 .bot,
+.S2 .bot {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 65%;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+.CMS .top-strategy .S1 .pic2,
+.S2 .pic2 {
+    width: 500px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.CMS .bottom-Strategy {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1500px;
+
+}
+
+.CMS .bottom-Strategy .S3,
+.S4,
+.S5 {
+    max-width: 400px;
+    height: 550px;
+    background-color: #f4f4f9;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+
+}
+
+.CMS .bottom-Strategy .S3 .pic1,
+.S4 .pic1,
+.S5 .pic1 {
+    width: 50px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 60px;
+
+}
+
+.CMS .bottom-Strategy .S3 .top,
+.S4 .top,
+.S5 .top {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 60px;
+
+}
+
+.CMS .bottom-Strategy .S3 .bot,
+.S4 .bot,
+.S5 .bot {
+    font-size: 1.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 65%;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.CMS .bottom-Strategy .S3 .pic2,
+.S4 .pic2,
+.S5 .pic2 {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    margin-left: 20px;
+    ;
+
+}
+
+/* =======================ps======================= */
+.PS {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1500px;
+    margin-bottom: 100px;
+}
+
+.PS img {
+    width: 520px;
+    height: 620px;
+
+}
+
+.PS .text-section {
+    max-width: 1500px;
+    margin-top: 60px
+}
+
+.PS .top {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+}
+
+.PS .mid {
+    font-size: 3.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+
+}
+
+.PS .bot {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+
+}
+
+/*=================== Everything in One Place================= */
+.EOP {
+    margin-bottom: 100px;
+}
+
+.EOP img {
+    margin-left: 125px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+    width: 1100px;
+    height: 650px;
+}
+
+.EOP .rate {
+    margin-left: 150px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    max-width: 1500px;
+
+}
+
+.EOP .rate .text-mid {
+    font-size: 3.7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-left: 70px;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+
+}
+
+.EOP .rate .text-bot {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+
+}
+
+hr.divider {
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, rgba(206, 211, 246, 0) 0, #bbb 38%, #999 64%, rgba(206, 211, 246, 0) 99%);
+    opacity: .4;
+    border: none;
+    margin: 0;
+    margin-bottom: 150px;
+}
+
+/*===================== DIGITAL TRANSFORMATION================== */
+.DT {
+    margin-left: 150px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1500px;
+    margin-bottom: 100px;
+}
+
+.DT img {
+    width: 560px;
+    height: 560px;
+
+}
+
+/* =====================TCS========================= */
+.TCS {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.TCS .items {
+    margin-left: 150px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1500px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+.TCS .item-1 {
+    /* border: 2px solid black; */
+    width: 500px;
+    height: 250px;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    transition: 0.5s all ease;
+}
+
+.TCS .item-1:hover {
+    transform: scale3d(110%, 110%, 110%);
+    transition: 0.5s all ease;
+}
+
+.TCS .items .item-1 img {
+    width: 100px;
+    height: 80px;
+    margin-left: 200px;
+
+}
+
+.TCS .item-1 .mid {
+    font-size: 2.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    /* margin-top: 10px; */
+    margin-left: 90px;
+
+}
+
+.TCS .item-1 .bot {
+    font-size: 1.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/* ===================Solutions==================== */
+
+.solution {
+    margin-top: 50px;
+    max-width: 1500px;
+    margin-left: 120px;
+    height: 550px;
+    margin-bottom: 100px;
+    background-color: #f4f4f9;
+    margin-right: 120px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.solution .text-section {
+    max-width: 530px;
+}
+
+.solution .text-section img {
+    width: 50px;
+    height: 50px;
+    margin-top: 90px;
+    margin-left: 70px;
+}
+
+.solution .text-section .mid {
+    font-size: 2.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    margin-top: 20px;
+
+
+}
+
+.solution .text-section .bot {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-bottom: 50px
+}
+
+.solution .text-section a {
+    color: #308af0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 70px;
+    text-decoration: none;
+}
+
+.solution .image-section img {
+    width: 550px;
+    margin-top: 100px;
+    height: 400px;
+}
+
+/* =======================data-driv======================== */
+.data-driv {
+    margin-left: 120px;
+    margin-right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1500px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+
+}
+
+.data-driv .image-section img {
+    width: 530px;
+    height: 620px;
+}
+
+.data-driv .text-section .mid {
+    font-size: 2.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+.data-driv .text-section .bot {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 50px
+}
+
+
+/* ============================CDA=========================== */
+
+.CDA {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 1500px;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.CDA .text-section {
+    max-width: 500px;
+    margin-left: 100px;
+}
+
+.CDA .text {
+    width: 500px;
+    height: 270px;
+    border: 2px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    transition: 0.5s all ease;
+    margin-bottom: 50px;
+}
+
+.CDA .text:hover {
+    transform: scale3d(110%, 110%, 110%);
+    transition: 0.5s all ease;
+}
+
+.CDA .text-section .text img {
+    width: 100px;
+    height: 80px;
+    margin-left: 200px;
+
+}
+
+.CDA .text .mid {
+    font-size: 2.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    margin-left: 90px;
+
+}
+
+.CDA .text .bot {
+    font-size: 1.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.CDA .image-section {
+    max-width: 700px;
+    overflow-x: hidden;
+}
+
+.CDA .image-section img {
+    width: 1230px;
+    height: 920px;
+}
+
+
+/* =============================SI============================ */
+
+.SI {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.SI .logo {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* gap: 10px; */
+    max-width: 900px;
+    /* margin-bottom: 100px; */
+    margin-left: 190px;
+    margin-top: 100px;
+}
+
+.SI .logo .l1 {
+    width: 140px;
+    height: 140px;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    transition: 0.5s all ease;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    margin-left: 25px;
+    transition: 0.5s all ease;
+}
+
+.SI .logo .l1:hover {
+    transform: scale3d(110%, 110%, 110%);
+    transition: 0.5s all ease;
+}
+
+.SI .logo .l1 img {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.SI .logo .l1 .name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.SI .btn1 {
+    margin-left: 580px;
+}
+
+/* =======================digital agencies======================== */
+.digi-agen {
+    margin-top: 100px;
+    /* margin-bottom: 100px; */
+    width: 100%;
+    height: 500px;
+    background-color: #f4f4f9;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.digi-agen .text-section {
+    max-width: 700px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.digi-agen .top {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+
+}
+
+.digi-agen .mid {
+    font-size: 3.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+
+}
+
+.digi-agen .image-section {
+    max-width: 950px;
+    margin-top: 50px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-right: 100px;
+}
+
+.digi-agen .image-section img {
+    width: 160px;
+    height: 60px;
+}
+
+/* =====================OHC========================= */
+
+.ohc {
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.ohc .upper-text {
+    margin-left: 400px;
+}
+
+.ohc .lower-text {
+    margin-left: 450px;
+}
+
+.swiper-container {
+    width: 100%;
+    padding: 20px 0;
+    overflow-x: hidden;
+}
+
+.swiper-slide {
+    background: #fff;
+    margin-left: 10px;
+    border-radius: 8px;
+    display: grid;
+    max-width: 2500px;
+}
+
+.testimonial {
+    max-width: 1500px;
+    margin-right: 100px;
+}
+
+.testimonial h3 {
+    font-size: 2.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.testimonial .author {
+    font-size: 1.6rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.testimonial .designation {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 95%;
+    letter-spacing: 1px;
+}
+
+.star-rating .star {
+    width: 310px;
+    height: 120px;
+}
+
+.star-rating img {
+    width: 170px;
+    height: 70px;
+}
+
+/* Swiper pagination styling */
+
+
+.swiper-pagination-bullet {
+    cursor: pointer;
+    position: relative;
+    top: 13350px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000;
+}
+
+
+/* =============================jb================================= */
+.jb {
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    /* margin-right: 100px; */
+    background-image: url(./ba-02.jpg);
+    width: 1100px;
+    max-width: 100%;
+    height: 430px;
+    border-radius: 20px;
+    border: 2px white solid;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.jb .text-section {
+    max-width: 700px;
+    margin-top: 50px;
+    margin-left: 50px;
+
+}
+
+.jb .text-section .mid {
+    font-size: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 85%;
+    letter-spacing: 1px;
+    /* margin-left: 90px; */
+
+}
+
+.jb .text-section .bot {
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+
+/* ===============================UF============================ */
+.UF {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-left: 100px;
+}
+
+.UF .mid {
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 95%;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.UF .bot {
+    font-size: 1.0rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.UF input {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+
+/* =============================LF============================= */
+.LF {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    /* margin-right: 50px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 400px;
+}
+
+.LF .left {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    opacity: 50%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+
+.LF img {
+    width: 180px;
+    height: 50px;
+    margin-left: 150px;
+}
